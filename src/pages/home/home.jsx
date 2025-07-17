@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import button from './img/Button.png'
 import subContainer from './img/Sub Container.png'
 import container from './img/Container (3).png'
@@ -17,11 +17,66 @@ import img100 from './img/Image (100).png'
 import img2025 from './img/Image - 2025-07-17T110917.926.png'
 import forth from './img/forth (2).png'
 import women from './img/women.png'
-import man from './img/man.png'
-import kimki from './img/kimki.png'
-import arus from './img/arus.png'
+import { Button, Input, Modal } from 'antd'
 import './home.css'
+import { useTodoStore } from './store'
 const Home = () => {
+  let { users, get, deleteUser, addUser, editUser } = useTodoStore()
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [addName, setAddName] = useState('')
+  const [addjob, setAddJob] = useState('')
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const [editName, setEditName] = useState('')
+  const [editjob, setEditJob] = useState('')
+  const [idx, setIdx] = useState(null)
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+  useEffect(() => {
+    get()
+  }, [])
+
+
+  function handleAdd() {
+    let newUsers = {
+      name: addName,
+      job: addjob,
+      img: women
+    }
+    addUser(newUsers)
+    setIsModalOpen(false)
+    setAddName('')
+    setAddJob('')
+  }
+
+  function getEditInfo(e) {
+    setIsEditModalOpen(true)
+    setEditName(e.name)
+    setEditJob(e.job)
+    setIdx(e.id)
+  }
+
+  function handleEdit() {
+    let upadate = {
+      name: editName,
+      job: editjob,
+      img: women
+    }
+    editUser(idx,upadate)
+    setIsEditModalOpen(false)
+    setEditName('')
+    setEditJob('')
+  }
+
   return (
     <div>
       <div style={{ display: 'flex', marginTop: "100px", justifyContent: 'center', gap: '50px' }}>
@@ -295,7 +350,7 @@ const Home = () => {
       </div>
 
 
-      <div style={{ backgroundColor: '#121212', padding: '30px', fontFamily: 'sans-serif', border: '1px solid #1F1F1F', marginTop: '50px', borderRadius: '20px', marginBottom:'100px' }}>
+      <div style={{ backgroundColor: '#121212', padding: '30px', fontFamily: 'sans-serif', border: '1px solid #1F1F1F', marginTop: '50px', borderRadius: '20px', marginBottom: '100px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
           <h2 style={{ color: '#fff', fontSize: '24px', fontWeight: 'bold' }}>TESTIMONIALS</h2>
           <span style={{ color: '#ccc', fontSize: '14px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px' }}>
@@ -304,135 +359,67 @@ const Home = () => {
         </div>
 
         <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'space-around' }}>
-          <div style={{
-            backgroundColor: '#1e1e1e',
-            borderRadius: '10px',
-            padding: '20px',
-            color: '#fff',
-            width: '240px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between'
-          }}>
-            <h4 style={{ marginBottom: '10px' }}>NEXGEN TURNED OUR BUSINESS AROUND!</h4>
-            <p style={{ fontSize: '14px', color: '#ccc' }}>
-              Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
-            </p>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              marginTop: '20px'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <img src={women} alt="Sarah" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
-                <div>
-                  <p style={{ margin: 0, fontSize: '14px', fontWeight: 'bold' }}>Sarah Thompson</p>
-                  <p style={{ margin: 0, fontSize: '12px', color: '#999' }}>CEO of BlueBloom</p>
-                </div>
-              </div>
-              <span style={{ color: '#ccc', fontSize: '18px' }}>→</span>
-            </div>
-          </div>
 
-          <div style={{
-            backgroundColor: '#1e1e1e',
-            borderRadius: '10px',
-            padding: '20px',
-            color: '#fff',
-            width: '240px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between'
-          }}>
-            <h4 style={{ marginBottom: '10px' }}>NEXGEN TURNED OUR BUSINESS AROUND!</h4>
-            <p style={{ fontSize: '14px', color: '#ccc' }}>
-              Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
-            </p>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              marginTop: '20px'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <img src={man} alt="Wade" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
-                <div>
-                  <p style={{ margin: 0, fontSize: '14px', fontWeight: 'bold' }}>Wade Warren</p>
-                  <p style={{ margin: 0, fontSize: '12px', color: '#999' }}>Art Director</p>
-                </div>
-              </div>
-              <span style={{ color: '#ccc', fontSize: '18px' }}>→</span>
-            </div>
-          </div>
 
-          <div style={{
-            backgroundColor: '#1e1e1e',
-            borderRadius: '10px',
-            padding: '20px',
-            color: '#fff',
-            width: '240px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between'
-          }}>
-            <h4 style={{ marginBottom: '10px' }}>WORKING WITH NEXGEN WAS A PLEASURE.</h4>
-            <p style={{ fontSize: '14px', color: '#ccc' }}>
-              Their web design team created a stunning website that perfectly captured our brand’s essence. The feedback from our customers has been overwhelmingly positive.
-            </p>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              marginTop: '20px'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <img src={kimki} alt="Lisa" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
-                <div>
-                  <p style={{ margin: 0, fontSize: '14px', fontWeight: 'bold' }}>Lisa Williams</p>
-                  <p style={{ margin: 0, fontSize: '12px', color: '#999' }}>CEO Of HealthTech</p>
-                </div>
-              </div>
-              <span style={{ color: '#ccc', fontSize: '18px' }}>→</span>
-            </div>
-          </div>
 
+          <Button type="primary" onClick={showModal}>
+            Open Modal
+          </Button>
+          <Modal
+            title="Basic Modal"
+            closable={{ 'aria-label': 'Custom Close Button' }}
+            open={isModalOpen}
+            onOk={handleAdd}
+            onCancel={handleCancel}
+          >
+            <Input placeholder='Name' value={addName} onChange={(e) => setAddName(e.target.value)} />
+            <Input placeholder='Job' value={addjob} onChange={(e) => setAddJob(e.target.value)} />
+          </Modal>
+          <Modal
+            title="Basic Modal"
+            closable={{ 'aria-label': 'Custom Close Button' }}
+            open={isEditModalOpen}
+            onOk={handleEdit}
+            onCancel={() => setIsEditModalOpen(false)}
+          >
+            <Input placeholder='Name' value={editName} onChange={(e) => setEditName(e.target.value)} />
+            <Input placeholder='Job' value={editjob} onChange={(e) => setEditJob(e.target.value)} />
+          </Modal>
           <div style={{
-            backgroundColor: '#1e1e1e',
-            borderRadius: '10px',
-            padding: '20px',
-            color: '#fff',
-            width: '240px',
             display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between'
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginTop: '20px',
+            gap: '20px'
           }}>
-            <h4 style={{ marginBottom: '10px' }}>NEXGEN'S WEB DESIGN TEAM BROUGHT OUR VISION TO LIFE.</h4>
-            <p style={{ fontSize: '14px', color: '#ccc' }}>
-              Their responsive design ensures our website looks stunning on all devices, contributing to increased user engagement.
-            </p>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              marginTop: '20px'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <img src={arus} alt="Jennifer" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
-                <div>
-                  <p style={{ margin: 0, fontSize: '14px', fontWeight: 'bold' }}>Jennifer Lee</p>
-                  <p style={{ margin: 0, fontSize: '12px', color: '#999' }}>COO of Foodie Haven</p>
+
+            {users.map((e) => {
+              return <div style={{ alignItems: 'center', gap: '10px', color: '#fff', backgroundColor: '#1e1e1e', padding: '20px', borderRadius: '10px' }} key={e.id}>
+                <h4 style={{ marginBottom: '10px' }}>NEXGEN TURNED OUR BUSINESS AROUND!</h4>
+                <p style={{ fontSize: '14px', color: '#ccc' }}>
+                  Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
+                </p>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  <img src={e.img} alt="Sarah" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
+                  <div>
+                    <p style={{ margin: 0, fontSize: '14px', fontWeight: 'bold' }}>{e.name}</p>
+                    <p style={{ margin: 0, fontSize: '12px', color: '#999' }}>{e.job}</p>
+                    <Button onClick={() => deleteUser(e.id)} style={{ backgroundColor: 'red', color: 'white' }}>Delete</Button>
+                    <Button onClick={() => getEditInfo(e)} style={{backgroundColor: 'blue', color: 'white'}}>Edit</Button>
+                  </div>
+                  <span style={{ color: '#ccc', fontSize: '18px' }}>→</span>
                 </div>
               </div>
-              <span style={{ color: '#ccc', fontSize: '18px' }}>→</span>
-            </div>
+            })}
           </div>
         </div>
+
+
       </div>
-
-      
-
     </div>
+
+
+
   )
 }
 
