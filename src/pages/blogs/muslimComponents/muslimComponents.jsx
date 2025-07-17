@@ -143,6 +143,7 @@ const MuslimComponents = () => {
           </select>
         </article>
       </Modal>
+      
       <section className="grid md:grid-cols-3 gap-3 p-3 rounded-lg shadow-lg border-1 border-gray-900">
         <article className="flex items-center justify-between md:col-span-3 gap-5 md:p-7 p-5 rounded-lg bg-[#1A1A1A]">
           <h2 className="text-4xl font-bold">Related Blogs</h2>
