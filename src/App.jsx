@@ -1,15 +1,15 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Route, Routes } from "react-router";
 import "./App.css";
 import Layout from "./pages/layout/Layout";
 import Home from "./pages/home/home";
 import Servise from "./pages/home/servise";
-import About from "./pages/about/about";
-import Projects from "./pages/about/projects";
 import Blogs2 from "./pages/blogs/blogs2";
 import Blogs from "./pages/careers/blogs";
 import Contact from "./pages/blogs/contact";
 import Careers from "./pages/careers/careers";
+import About from "./pages/about/about";
+import Projects from "./pages/projects/projects";
 
 function App() {
   return (
