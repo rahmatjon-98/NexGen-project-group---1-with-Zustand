@@ -1,0 +1,91 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Explore Job Listings",
+      "dec": "Visit our website's Careers page to explore the current job listings. Reviewth various roles available and select the position that aligns with youskills, experience, and career aspirations."
+    },
+    {
+      "id": "2",
+      "name": "Explore Job Listings",
+      "dec": "Visit our website's Careers page to explore the current job listings. Reviewth various roles available and select the position that aligns with youskills, experience, and career aspirations."
+    },
+    {
+      "id": "3",
+      "name": "Explore Job Listings3",
+      "dec": "Visit our website's Careers page to explore the current job listings. Reviewth various roles available and select the position that aligns with youskills, experience, and career aspirations."
+    },
+    {
+      "id": "4",
+      "name": "Explore Job Listings",
+      "dec": "Visit our website's Careers page to explore the current job listings. Reviewth various roles available and select the position that aligns with youskills, experience, and career aspirations."
+    },
+    {
+      "id": "5",
+      "name": "Explore Job Listings",
+      "dec": "Visit our website's Careers page to explore the current job listings. Reviewth various roles available and select the position that aligns with youskills, experience, and career aspirations."
+    },
+    {
+      "id": "6",
+      "name": "Explore Job Listings",
+      "dec": "Visit our website's Careers page to explore the current job listings. Reviewth various roles available and select the position that aligns with youskills, experience, and career aspirations."
+    },
+    {
+      "id": "7",
+      "name": "Explore Job Listings",
+      "dec": "Visit our website's Careers page to explore the current job listings. Reviewth various roles available and select the position that aligns with youskills, experience, and career aspirations."
+    },
+    {
+      "id": "8",
+      "name": "Explore Job Listings",
+      "dec": "Visit our website's Careers page to explore the current job listings. Reviewth various roles available and select the position that aligns with youskills, experience, and career aspirations."
+    }
+  ],
+
+  "data2": [
+    {
+      "img": "/imgMuslim/img1.png",
+      "name": "Optimizing Mobile User Experience for Higher Conversions",
+      "description": "Mobile devices dominate digital interactions, making mobile user experience crucial for conversion rates. Explore mobile design best practices...",
+      "status": false,
+      "id": "1"
+    },
+    {
+      "img": "/imgMuslim/img2.png",
+      "name": "Mastering the Art of Minimalistic Design",
+      "description": "Simplicity and elegance take center stage in minimalistic design. Learn the principles of minimalism, how to effectively communicate with fewer elements...",
+      "status": true,
+      "id": "2"
+    },
+    {
+      "img": "/imgMuslim/img3.png",
+      "name": "The Psychology of Visual Design in Branding",
+      "description": "Uncover the impact of visual elements in branding and how they influence customer perceptions and emotions. Explore color psychology, typography choices...",
+      "status": false,
+      "id": "3"
+    }
+  ],
+
+  "muhammad": [
+    {
+      "name": "Sarah Thompson",
+      "job": "CEO of BlueBloom",
+      "img": "./src/pages/home/img/women.png"
+    },
+    {
+      "name": "Wade Warren",
+      "job": "Art Director",
+      "img": "./src/pages/home/img/man.png"
+    },
+    {
+      "name": "Lisa Williams",
+      "job": "CEO Of HealthTech",
+      "img": "./src/pages/home/img/kimki.png"
+    },
+    {
+      "name": "Jennifer Lee",
+      "job": "COO of Foodie Haven",
+      "img": "./src/pages/home/img/arus.png"
+    }
+  ]
+}
