@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const api = "http://localhost:3000/data";
+const api = "http://localhost:3000/data2";
 
 export const useToDoAsyncStore = create((set) => ({
   data: [],
