@@ -9,10 +9,10 @@ import img4 from "./Icon Container (7).png";
 
 const Layout = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white ">
       <header className="flex items-center gap-5 bg-[#1A1A1A] text-[#81807E] justify-between p-2.5 relative top-2.5 mx-3 rounded">
         <img src={logo} alt="" />
-        <div className="flex items-center gap-5 uppercase font-semibold">
+        <div className="flex flex-wrap items-center gap-5 uppercase font-semibold">
           <Link className="bg-[#0F0F0F] rounded px-2.5 py-1 " to={"/"}>
             {" "}
             <p>Home</p>{" "}
@@ -57,9 +57,9 @@ const Layout = () => {
         <Outlet />
       </main>
 
-      <footer className="space-y-20 w-[95%] mx-auto">
-        <article className="">
-          <div className="bg-[#1A1A1A] w-[100%] m-auto flex items-center justify-between py-[40px] border border-[#0F0F0F] px-[25px] rounded-xl">
+      <footer className="space-y-20 w-[95%] ">
+        <article className="max-w-screen">
+          <div className="bg-[#1A1A1A]  flex items-center justify-between py-[40px] border border-[#0F0F0F] px-[25px] rounded-xl">
             <h1 className="text-[35px] font-[600] text-[#F9EFEC]">
               Frequently Asked Questions
             </h1>
@@ -69,10 +69,10 @@ const Layout = () => {
             </div>
           </div>
 
-          <div className="flex items-start justify-between mt-[40px] ">
-            <div className="w-[750px] flex flex-col gap-[15px]">
+          <div className="grid items-start justify-between mt-[40px] ">
+            <div className="flex flex-col gap-[15px]">
               <div className="bg-[#1A1A1A] flex items-start justify-between p-[25px] rounded-xl">
-                <div className="w-[630px] flex flex-col items-start gap-[15px]">
+                <div className="[630px] flex flex-col items-start gap-[15px]">
                   <h2 className="text-[#F9EFEC] text-[18px] font-[700] border-b-2  border-[#262626] pb-[25px]">
                     How long does it take to complete a web development project?
                   </h2>
@@ -82,69 +82,69 @@ const Layout = () => {
                     time while maintaining the highest quality standards.
                   </p>
                 </div>
-                <button className="text-[#E7BEB1] font-bold bg-[#333333] w-[40px] h-[40px] rounded-full text-[25px]">
+                <button className="text-[#E7BEB1] font-bold bg-[#333333] -[40px] h-[40px] rounded-full text-[25px]">
                   -
                 </button>
               </div>
               <div className="bg-[#1A1A1A] flex items-start justify-between p-[25px] rounded-xl">
-                <div className="w-[630px] flex flex-col items-start gap-[15px]">
+                <div className="-[630px] flex flex-col items-start gap-[15px]">
                   <h2 className="text-[#F9EFEC] text-[18px] font-[700] ">
                     Can you handle large-scale mobile app development projects?
                   </h2>
                 </div>
-                <button className="text-[#E7BEB1] font-bold bg-[#333333] w-[40px] h-[40px] rounded-full text-[25px]">
+                <button className="text-[#E7BEB1] font-bold bg-[#333333] -[40px] h-[40px] rounded-full text-[25px]">
                   +
                 </button>
               </div>
               <div className="bg-[#1A1A1A] flex items-start justify-between p-[25px] rounded-xl">
-                <div className="w-[630px] flex flex-col items-start gap-[15px]">
+                <div className="-[630px] flex flex-col items-start gap-[15px]">
                   <h2 className="text-[#F9EFEC] text-[18px] font-[700] ">
                     Can you integrate third-party APIs into our mobile app?
                   </h2>
                 </div>
-                <button className="text-[#E7BEB1] font-bold bg-[#333333] w-[40px] h-[40px] rounded-full text-[25px]">
+                <button className="text-[#E7BEB1] font-bold bg-[#333333] -[40px] h-[40px] rounded-full text-[25px]">
                   +
                 </button>
               </div>
               <div className="bg-[#1A1A1A] flex items-start justify-between p-[25px] rounded-xl">
-                <div className="w-[630px] flex flex-col items-start gap-[15px]">
+                <div className=" flex flex-col items-start gap-[15px]">
                   <h2 className="text-[#F9EFEC] text-[18px] font-[700] ">
                     How do you ensure cross-platform compatibility for mobile
                     apps?
                   </h2>
                 </div>
-                <button className="text-[#E7BEB1] font-bold bg-[#333333] w-[40px] h-[40px] rounded-full text-[25px]">
+                <button className="text-[#E7BEB1] font-bold bg-[#333333] -[40px] h-[40px] rounded-full text-[25px]">
                   +
                 </button>
               </div>
               <div className="bg-[#1A1A1A] flex items-start justify-between p-[25px] rounded-xl">
-                <div className="w-[630px] flex flex-col items-start gap-[15px]">
+                <div className=" flex flex-col items-start gap-[15px]">
                   <h2 className="text-[#F9EFEC] text-[18px] font-[700] ">
                     What is your approach to user experience (UX) design?
                   </h2>
                 </div>
-                <button className="text-[#E7BEB1] font-bold bg-[#333333] w-[40px] h-[40px] rounded-full text-[25px]">
+                <button className="text-[#E7BEB1] font-bold bg-[#333333] -[40px] h-[40px] rounded-full text-[25px]">
                   +
                 </button>
               </div>
             </div>
 
-            <div className="w-[500px] bg-[#1A1A1A] p-[30px] rounded-xl flex flex-col items-start gap-[25px]">
+            <div className=" bg-[#1A1A1A] p-[30px] rounded-xl flex flex-col items-start gap-[25px]">
               <h1 className="text-[#F9EFEC] font-[500] text-[22px]">
                 Ask your question
               </h1>
-              <div className="flex flex-col items-start gap-[15px] border-t-2 border-[#262626] w-[95%] pt-[20px]">
+              <div className="flex flex-col items-start gap-[15px] border-t-2 border-[#262626] -[95%] pt-[20px]">
                 <label className="text-[#F3DFD8] font-bold">Name</label>
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="bg-[#0F0F0F] text-[#676665] w-[95%] font-bold py-[8px] rounded-xl px-[15px]"
+                  className="bg-[#0F0F0F] text-[#676665] -[95%] font-bold py-[8px] rounded-xl px-[15px]"
                 />
                 <label className="text-[#F3DFD8] font-bold">Email</label>
                 <input
                   type="text"
                   placeholder="Enter your email"
-                  className="bg-[#0F0F0F] text-[#676665] w-[95%] font-bold py-[8px] rounded-xl px-[15px]"
+                  className="bg-[#0F0F0F] text-[#676665] -[95%] font-bold py-[8px] rounded-xl px-[15px]"
                 />
                 <label className="text-[#F3DFD8] font-bold">
                   Your Question
@@ -152,9 +152,9 @@ const Layout = () => {
                 <textarea
                   type="text"
                   placeholder="Enter Your Question Here ....."
-                  className="bg-[#0F0F0F] text-[#676665] w-[95%] max-h-32 min-h-32 font-bold rounded-xl p-[15px]"
+                  className="bg-[#0F0F0F] text-[#676665] -[95%] max-h-32 min-h-32 font-bold rounded-xl p-[15px]"
                 ></textarea>
-                <button className="bg-[#CE7D63] text-[#0F0F0F] font-bold m-auto w-[98%] py-[10px] rounded-xl">
+                <button className="bg-[#CE7D63] text-[#0F0F0F] font-bold m-auto -[98%] py-[10px] rounded-xl">
                   Send Your Message
                 </button>
               </div>
@@ -162,10 +162,10 @@ const Layout = () => {
           </div>
         </article>
 
-        <div className="space-y-5">
-          <article className="bg-[#CE7D63] p-[40px]  rounded-xl">
-            <div className="w-[95%] m-auto text-[#0F0F0F] flex items-center justify-between">
-              <div className="w-[900px] flex flex-col items-start gap-[20px]">
+        <div className="space-y-5 max-w-screen">
+          <article className="bg-[#CE7D63] p-5  rounded-xl">
+            <div className=" text-[#0F0F0F] flex items-center justify-between">
+              <div className=" flex flex-col items-start gap-[20px]">
                 <h1 className="text-[40px] font-[500]">
                   Ready to Transform Your Digital Presence?
                 </h1>
@@ -182,24 +182,24 @@ const Layout = () => {
             </div>
           </article>
 
-          <article className="bg-[#1A1A1A] p-3  flex items-center gap-2.5 rounded-xl">
+          <article className="bg-[#1A1A1A] p-3  flex flex-wrap items-center gap-2.5 rounded-xl">
             <p className="text-[#676665] "> on Social Media</p>
-            <div className="w-2 h-2 bg-[#CE7D63] rounded-full"></div>
+            <div className=" h-2 bg-[#CE7D63] rounded-full"></div>
             <p className="text-[#676665] ">Follow Us on Social Media</p>
-            <div className="w-2 h-2 bg-[#CE7D63] rounded-full"></div>
+            <div className=" h-2 bg-[#CE7D63] rounded-full"></div>
             <p className="text-[#676665] ">Follow Us on Social Media</p>
-            <div className="w-2 h-2 bg-[#CE7D63] rounded-full"></div>
+            <div className=" h-2 bg-[#CE7D63] rounded-full"></div>
             <p className="text-[#676665] ">Follow Us on Social Media</p>
-            <div className="w-2 h-2 bg-[#CE7D63] rounded-full"></div>
+            <div className=" h-2 bg-[#CE7D63] rounded-full"></div>
             <p className="text-[#676665] ">Follow Us on Social Media</p>
-            <div className="w-2 h-2 bg-[#CE7D63] rounded-full"></div>
+            <div className=" h-2 bg-[#CE7D63] rounded-full"></div>
             <p className="text-[#676665] ">Follow Us on Social Media</p>
-            <div className="w-2 h-2 bg-[#CE7D63] rounded-full"></div>
+            <div className=" h-2 bg-[#CE7D63] rounded-full"></div>
             <p className="text-[#676665] ">Follow</p>
           </article>
 
-          <article className=" flex items-start justify-between gap-5 pb-10">
-            <div className="w-2/5 grid grid-cols-2 gap-5">
+          <article className=" flex flex-wrap items-start justify-between gap-5 pb-10">
+            <div className=" grid grid-cols-2 gap-5">
               <div className="bg-[#1A1A1A] p-[20px] rounded-xl space-y-4">
                 <div className="flex justify-between items-center pb-5">
                   <img className="w-2/10" src={img1} alt="" />
@@ -212,7 +212,6 @@ const Layout = () => {
                   Share visually appealing snippets of our projects.
                 </p>
               </div>
-
               <div className="bg-[#1A1A1A] p-[20px] rounded-xl space-y-4">
                 <div className="flex justify-between items-center pb-5">
                   <img className="w-2/10" src={img2} alt="" />

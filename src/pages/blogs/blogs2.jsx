@@ -3,13 +3,14 @@ import MuslimComponents from "./muslimComponents/muslimComponents";
 
 const Blogs2 = () => {
   return (
-    <>
+    
+    <div className="max-w-screen">
       <main className="text-white p-4 font-sans min-h-[500px] grid md:grid-cols-5 my-10  gap-6">
         <section className="bg-[#1A1A1A] rounded-xl p-6 space-y-6 flex content-center justify-center md:col-span-3 items-center gap-5">
           <h1 className="md:text-5xl text-2xl font-bold leading-tight ">
             MASTERING THE ART
             <br />
-              OF MINIMALISTIC DESIGN
+            OF MINIMALISTIC DESIGN
           </h1>
           <button className="flex items-center gap-2 text-[#D87D4A] text-xl font-medium">
             <span className="w-6 h-6 border border-[#D87D4A] rounded-full flex items-center justify-center">
@@ -18,7 +19,7 @@ const Blogs2 = () => {
             START A PROJECT
           </button>
         </section>
-        
+
         <aside className="grid gap-4 bg-[#1A1A1A] md:col-span-2 p-4 rounded-2xl">
           <div className="bg-[#1F1F1F] rounded-lg p-4 flex justify-between items-center">
             <span className="text-gray-400 uppercase tracking-wide">
@@ -161,7 +162,7 @@ const Blogs2 = () => {
       <main className="bg-black text-white">
         <MuslimComponents />
       </main>
-    </>
+    </div>
   );
 };
 
