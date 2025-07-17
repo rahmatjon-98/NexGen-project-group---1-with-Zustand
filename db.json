@@ -41,7 +41,6 @@
       "dec": "Visit our website's Careers page to explore the current job listings. Reviewth various roles available and select the position that aligns with youskills, experience, and career aspirations."
     }
   ],
-
   "data2": [
     {
       "img": "/imgMuslim/img1.png",
@@ -65,27 +64,30 @@
       "id": "3"
     }
   ],
-
   "muhammad": [
     {
       "name": "Sarah Thompson",
       "job": "CEO of BlueBloom",
-      "img": "./src/pages/home/img/women.png"
+      "img": "./src/pages/home/img/women.png",
+      "id": "5009"
     },
     {
-      "name": "Wade Warren",
+      "name": "Wade Warrend",
       "job": "Art Director",
-      "img": "./src/pages/home/img/man.png"
+      "img": "/src/pages/home/img/women.png",
+      "id": "e652"
     },
     {
-      "name": "Lisa Williams",
+      "name": "Lisa Williamsd",
       "job": "CEO Of HealthTech",
-      "img": "./src/pages/home/img/kimki.png"
+      "img": "/src/pages/home/img/women.png",
+      "id": "f66a"
     },
     {
       "name": "Jennifer Lee",
       "job": "COO of Foodie Haven",
-      "img": "./src/pages/home/img/arus.png"
+      "img": "./src/pages/home/img/arus.png",
+      "id": "c40b"
     }
   ]
 }
