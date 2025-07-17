@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "img": "/imgMuslim/img1.png",
+      "name": "Optimizing Mobile User Experience for Higher Conversions",
+      "description": "Mobile devices dominate digital interactions, making mobile user experience crucial for conversion rates. Explore mobile design best practices...",
+      "status": false,
+      "id": "1"
+    },
+    {
+      "img": "/imgMuslim/img2.png",
+      "name": "Mastering the Art of Minimalistic Design",
+      "description": "Simplicity and elegance take center stage in minimalistic design. Learn the principles of minimalism, how to effectively communicate with fewer elements...",
+      "status": true,
+      "id": "2"
+    },
+    {
+      "img": "/imgMuslim/img3.png",
+      "name": "The Psychology of Visual Design in Branding",
+      "description": "Uncover the impact of visual elements in branding and how they influence customer perceptions and emotions. Explore color psychology, typography choices...",
+      "status": false,
+      "id": "3"
+    }
+  ]
+}
