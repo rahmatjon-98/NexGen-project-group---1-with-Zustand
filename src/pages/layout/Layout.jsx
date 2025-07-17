@@ -162,10 +162,10 @@ const Layout = () => {
           </div>
         </article>
 
-        <div className="space-y-5 max-w-screen">
-          <article className="bg-[#CE7D63] p-5  rounded-xl">
-            <div className=" text-[#0F0F0F] flex items-center justify-between">
-              <div className=" flex flex-col items-start gap-[20px]">
+        <div className="space-y-5">
+          <article className="bg-[#CE7D63] p-[40px]  rounded-xl">
+            <div className="w-[95%] m-auto text-[#0F0F0F] flex items-center justify-between">
+              <div className="w-[900px] flex flex-col items-start gap-[20px]">
                 <h1 className="text-[40px] font-[500]">
                   Ready to Transform Your Digital Presence?
                 </h1>
