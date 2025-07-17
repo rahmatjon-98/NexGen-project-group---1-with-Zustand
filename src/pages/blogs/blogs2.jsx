@@ -4,7 +4,7 @@ import MuslimComponents from "./muslimComponents/muslimComponents";
 const Blogs2 = () => {
   return (
     <>
-      <main className=" text-white p-4 font-sans min-h-[500px] grid md:grid-cols-5 my-10  gap-6">
+      <main className="text-white p-4 font-sans min-h-[500px] grid md:grid-cols-5 my-10  gap-6">
         <section className="bg-[#1A1A1A] rounded-xl p-6 space-y-6 flex content-center justify-center md:col-span-3 items-center gap-5">
           <h1 className="md:text-5xl text-2xl font-bold leading-tight ">
             MASTERING THE ART
